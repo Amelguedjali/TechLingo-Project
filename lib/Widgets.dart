@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'constant.dart';
+
 Widget buildLoginWithGoogle(){
  return Center(
    child: ElevatedButton(
@@ -88,10 +89,58 @@ Widget buildLoginWithGoogle(){
 
          onPressed: () {},
 
-       ),);
+       ),);}
 
 
 
+     Widget ConfirmButton(){
+       return Center(
+         child: ElevatedButton(
+           child : Text(
+             'Update Profile',
+             style: TextStyle(
+               color: white,
+               fontWeight: FontWeight.bold,
+               fontSize: 17,
+             ),
+           ),
+           style: ElevatedButton.styleFrom(
+             padding: const EdgeInsets.all(13),
+             fixedSize: Size(250, 50),
+             primary: blueF,
+             elevation: 0,
+             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12) ),
+           ),
 
+           onPressed: () {},
 
+         ),);
  }
+
+
+Widget buildTextField(String labelText, String placeholder){
+  return Padding(
+    padding: EdgeInsets.only(bottom:30),
+
+    child: TextField(
+
+      decoration: InputDecoration(
+        contentPadding: EdgeInsets.only(bottom:5),
+        labelText: labelText,
+        floatingLabelBehavior: FloatingLabelBehavior.always,
+        hintText: placeholder,
+        hintStyle: TextStyle(
+          fontSize: 16,
+          color: Colors.grey[800],
+        ),
+
+
+
+
+      ),
+    ),
+  );
+}
+
+
+
