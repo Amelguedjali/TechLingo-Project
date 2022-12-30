@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projet_bdd/constant.dart';
+import 'package:projet_bdd/pages/introduction6.dart';
+import 'package:projet_bdd/pages/puzzle.dart';
 
 
 class quiz_qcm extends StatefulWidget {
@@ -10,7 +12,7 @@ class quiz_qcm extends StatefulWidget {
 }
 
 class _quiz_qcmState extends State<quiz_qcm> {
-  var isHover= false;
+  var click= false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,8 +20,13 @@ class _quiz_qcmState extends State<quiz_qcm> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(21, 41, 331.9, 0),
-              child: Icon(Icons.arrow_back_ios),
+              padding: const EdgeInsets.fromLTRB(21, 29, 331.9, 0),
+              child: IconButton(padding: EdgeInsets.zero,onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const introduction6()),
+                );
+              }, icon: Icon(Icons.arrow_back_ios),),
             ),
             SizedBox(
                 height:63,
@@ -52,15 +59,21 @@ class _quiz_qcmState extends State<quiz_qcm> {
                 )
             ),
             SizedBox(height: 25,),
-            Image.asset('assets/Rectangle 7.png'),
+            Container(height: 236,
+                width: 236,decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                )
+                ,child: Image.asset('assets/Rectangle 7.png')),
             SizedBox(height: 22,),
             SizedBox(
                 height:40,
                 width: 236,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {setState(() {
+                      click=!click;
+                    });},
                     style: ElevatedButton.styleFrom(
-                      primary: color3,
+                      primary: (click==false)? color3: Colors.green,
                       onPrimary: blueF,
                       shadowColor: blueF,
                       elevation: 5,
@@ -80,9 +93,11 @@ class _quiz_qcmState extends State<quiz_qcm> {
                 height:40,
                 width: 236,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {setState(() {
+                      click=!click;
+                    });},
                     style: ElevatedButton.styleFrom(
-                      primary: color3,
+                      primary: (click==false)? color3: Colors.red,
                       onPrimary: blueF,
                       shadowColor: blueF,
                       elevation: 5,
@@ -102,9 +117,11 @@ class _quiz_qcmState extends State<quiz_qcm> {
                 height:40,
                 width: 236,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {setState(() {
+                      click=!click;
+                    });},
                     style: ElevatedButton.styleFrom(
-                      primary: color3,
+                      primary: (click==false)? color3: Colors.red,
                       onPrimary: blueF,
                       shadowColor: blueF,
                       elevation: 5,
@@ -126,7 +143,12 @@ class _quiz_qcmState extends State<quiz_qcm> {
                   width: 63,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: Icon(Icons.arrow_forward_sharp, color: Colors.white,),
+                    child: IconButton(padding: EdgeInsets.zero,onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const puzzle()),
+                      );
+                    }, icon: Icon(Icons.arrow_forward_sharp,color: Colors.white,),),
                     style: ElevatedButton.styleFrom(
                       shadowColor: blueC,
                       shape: RoundedRectangleBorder(
@@ -163,5 +185,6 @@ class _quiz_qcmState extends State<quiz_qcm> {
 
       ),
     );
+
   }
 }

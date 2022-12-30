@@ -19,6 +19,10 @@ import 'package:projet_bdd/pages/code_password.dart';
 import 'package:projet_bdd/pages/quiz_match.dart';
 import 'package:projet_bdd/pages/quiz_words.dart';
 import 'package:projet_bdd/pages/quiz_letters.dart';
+import 'package:projet_bdd/pages/puzzle.dart';
+import 'package:projet_bdd/pages/inside_a_domain.dart';
+import 'package:projet_bdd/pages/inside_a_domain_2.dart';
+
 
 
 void main() {
@@ -26,7 +30,7 @@ void main() {
       theme: ThemeData(
         fontFamily: 'poppins'),
     debugShowCheckedModeBanner: false,
-    home: quiz_words(),
+    home: inside_a_domain_2(),
   ));
 }
 
