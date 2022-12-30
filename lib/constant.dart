@@ -11,6 +11,9 @@ Color red = Color(0xFFCC0202);
 Color color2 = Color(0xFFF5F5F5);
 Color color3 = Color(0xFFEDEDED);
 Color color4 = Color(0xFFFAFAFA);
+Color color5 = Color(0xFFF8F8F8);
+
+
 
 
 

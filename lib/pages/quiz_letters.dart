@@ -53,7 +53,11 @@ class _quiz_lettersState extends State<quiz_letters> {
                 )
             ),
             SizedBox(height: 25,),
-            Image.asset('assets/Rectangle 7.png'),
+            Container(height: 236,
+                width: 236,decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                )
+                ,child: Image.asset('assets/Rectangle 7.png')),
             SizedBox(height: 30,),
             Row(
               children: [
