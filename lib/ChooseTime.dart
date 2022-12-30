@@ -61,13 +61,13 @@ class _ChooseGoalState extends State<ChooseGoal> {
             ),
           ),
           SizedBox(height: 40),
-          buildTimeButton('5min'),
+          buildTimeButton('5min',context),
             SizedBox(height: 20),
-            buildTimeButton(' 10min'),
+            buildTimeButton(' 10min',context),
           SizedBox(height: 20),
-          buildTimeButton('15min'),
+          buildTimeButton('15min',context),
           SizedBox(height: 20),
-          buildTimeButton(' 30min'),
+          buildTimeButton(' 30min',context),
           SizedBox(height: 30),
 
         Center(

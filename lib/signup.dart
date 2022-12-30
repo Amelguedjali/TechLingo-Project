@@ -134,7 +134,7 @@ class _SignupPageState extends State<SignupPage> {
                   SizedBox(height: 13),
 
                   //sign in button
-                  buildSign(),
+                  buildSign(context),
                   //Don't have an account
                   Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -196,7 +196,7 @@ class _SignupPageState extends State<SignupPage> {
 
                   SizedBox(height: 10),
 
-                  buildLoginWithGoogle(),
+                  buildLoginWithGoogle(context),
 
 
 

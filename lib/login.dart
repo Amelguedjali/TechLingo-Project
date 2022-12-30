@@ -1,6 +1,5 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
+import 'package:techlingo/forgetPassword.dart';
 import 'constant.dart';
 import 'signup.dart';
 import 'Widgets.dart';
@@ -99,10 +98,13 @@ class _LoginPageState extends State<LoginPage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushReplacement(
+                                  context, MaterialPageRoute(builder: (context) => forgot_password()));
+                            },
                             child: Text(
 
-                                'Forget Password?',
+                                'Forgot Password?',
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
                                   color: blueC,
@@ -114,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   //login in button
 
-                  buildLogin(),
+                  buildLogin(context),
 
 
                   //Don't have an account
@@ -185,7 +187,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   SizedBox(height: 25),
 
-              buildLoginWithGoogle(),
+              buildLoginWithGoogle( context),
 
 
                 ]),))
