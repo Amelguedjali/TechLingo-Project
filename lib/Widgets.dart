@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:techlingo/HomePage.dart';
 import 'constant.dart';
+import 'package:charts_flutter/flutter.dart' as charts;
+
+import 'package:pie_chart/pie_chart.dart';
 
 Widget buildLoginWithGoogle(BuildContext context){
  return Center(
@@ -690,3 +693,121 @@ Widget Room( ){
 
 
 );}
+
+class BarChartModel {
+  String day;
+  int time;
+
+
+  BarChartModel({
+    required this.day,
+    required this.time,
+
+  });
+}
+
+final List<BarChartModel> data = [
+  BarChartModel(
+    day: "S",
+    time: 35,
+
+  ),
+  BarChartModel(
+    day: "M",
+    time: 28,
+
+  ),
+  BarChartModel(
+    day: "T",
+    time: 20,
+
+  ),
+  BarChartModel(
+    day: "W",
+    time: 45,
+
+  ),
+  BarChartModel(
+    day: "T",
+    time: 37,
+
+  ),
+  BarChartModel(
+    day: "F",
+    time: 20,
+
+  ),
+  BarChartModel(
+    day: "St",
+    time: 15,
+
+  ),
+
+];
+
+@override
+Widget buildChart() {
+  List<charts.Series<BarChartModel, String>> series = [
+    charts.Series(
+      id: "Time",
+      data: data,
+      domainFn: (BarChartModel series, _) => series.day,
+      measureFn: (BarChartModel series, _) => series.time,
+    ),
+  ];
+
+  return Center(child : SizedBox(
+    height:150,
+    width: 200,
+
+
+
+    child: charts.BarChart(
+      series,
+      vertical: true,
+      defaultRenderer: new charts.BarRendererConfig(
+        maxBarWidthPx: 5,
+
+      ),
+
+
+    ),
+
+
+  ));
+}
+
+
+
+
+  Map<String, double> dataMap = {
+    "Artificial \nintelligence\n": 7,
+    "Cyber\nsecurity\n": 2,
+    "Programming": 2,
+    "Electronics": 2,
+  };
+
+  @override
+  Widget buildPie(BuildContext context) {
+    return  Center(child : SizedBox(
+      height:170,
+      width: 300,
+
+
+          child: Column(children : [PieChart(
+
+            dataMap: dataMap,
+            chartRadius: MediaQuery.of(context).size.width / 3,
+            legendOptions: LegendOptions(
+              legendPosition: LegendPosition.left,
+            ),
+            chartValuesOptions: ChartValuesOptions(
+              showChartValuesInPercentage: false,
+              showChartValues: false,
+            ),
+          ),
+        ])),
+      );
+  }
+
+
