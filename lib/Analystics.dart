@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+
 import 'package:techlingo/HomePageAdmin.dart';
+import 'package:techlingo/Widgets.dart';
 import 'constant.dart';
 import 'Profile.dart';
 import 'HomePage.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
+
 
 class Analystics extends StatefulWidget {
   const Analystics({Key? key}) : super(key: key);
@@ -246,11 +248,13 @@ class _AnalysticsState extends State<Analystics> {
 
 
 
-                          child: Column(
+                          child:  Column(children : [Column(
                               children : [
 
+
+
                                 SizedBox(height: 18 ),
-                                Text('   Use time per day  ',
+                                Text('Use time per day',
                                     style: TextStyle(
                                       fontFamily:'Poppins',
                                       fontSize: 24,
@@ -271,12 +275,17 @@ class _AnalysticsState extends State<Analystics> {
 
 
 
+
                               ]
 
 
-                          )
+                          ),
 
 
+                            buildChart(),
+
+
+                          ])
                       ),
 
                     ),
@@ -307,7 +316,7 @@ class _AnalysticsState extends State<Analystics> {
                               children : [
 
                                 SizedBox(height: 18 ),
-                                Text('   Users per category   ',
+                                Text('Users per category',
                                     style: TextStyle(
                                       fontFamily:'Poppins',
                                       fontSize: 24,
@@ -315,6 +324,10 @@ class _AnalysticsState extends State<Analystics> {
 
                                     )
                                 ),
+
+                                SizedBox(height: 30),
+
+                                buildPie(context),
 
 
                               ]
@@ -336,6 +349,5 @@ class _AnalysticsState extends State<Analystics> {
     );
   }
 }
-
 
 
