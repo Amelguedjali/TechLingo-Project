@@ -1,15 +1,15 @@
-import 'package:projet_bdd/common/widgets/bottom_bar.dart';
-// import 'package:projet_bdd/features/address/screens/address_screen.dart';
-import 'package:projet_bdd/pages/admin_words_add.dart';
-import 'package:projet_bdd/signup.dart';
-import 'package:projet_bdd/login.dart';
-// import 'package:projet_bdd/features/home/screens/category_deals_screen.dart';
-// import 'package:projet_bdd/features/home/screens/home_screen.dart';
-// import 'package:projet_bdd/features/order_details/screens/order_details.dart';
-// import 'package:projet_bdd/features/product_details/screens/product_details_screen.dart';
-// import 'package:projet_bdd/features/search/screens/search_screen.dart';
-// import 'package:projet_bdd/models/order.dart';
-import 'package:projet_bdd/models/word.dart';
+import 'package:techlingo/common/widgets/bottom_bar.dart';
+// import 'package:techlingo/features/address/screens/address_screen.dart';
+import 'package:techlingo/pages/admin_words_add.dart';
+import 'package:techlingo/signup.dart';
+import 'package:techlingo/login.dart';
+// import 'package:techlingo/features/home/screens/category_deals_screen.dart';
+// import 'package:techlingo/features/home/screens/home_screen.dart';
+// import 'package:techlingo/features/order_details/screens/order_details.dart';
+// import 'package:techlingo/features/product_details/screens/product_details_screen.dart';
+// import 'package:techlingo/features/search/screens/search_screen.dart';
+// import 'package:techlingo/models/order.dart';
+import 'package:techlingo/models/word.dart';
 import 'package:flutter/material.dart';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
