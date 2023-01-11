@@ -176,6 +176,85 @@ class _SignupPageState extends State<SignupPage> {
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
                       ),
+<<<<<<< HEAD
+=======
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 20.0),
+                        child: TextField(
+                          obscureText: true,
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: 'Confirm your Password',
+                            suffixIcon: Icon(Icons.visibility_off,
+                                color: Colors.grey[600]),
+
+                          ),
+
+                        ),),),),
+
+
+
+                  SizedBox(height: 13),
+
+                  //sign in button
+                  buildSign(context),
+                  //Don't have an account
+                  Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                      child : Row(
+                        mainAxisAlignment : MainAxisAlignment.center,
+                        children : [
+                          Text(
+                            "Already have an account? ",
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextButton(
+
+                            child:  Text(
+                              " Login",
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                color: blueC,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            onPressed: () =>Navigator.of(context).push(MaterialPageRoute(builder:(context)=>LoginPage())),),
+
+                        ],)),
+
+
+                  // or
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Divider(
+                            thickness: 0.9,
+                            color:Colors.grey[700],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                          child: Text(
+                            'Or',
+                            style: TextStyle(
+                                fontFamily: 'Poppins',
+                                color: Colors.grey[900]),
+                          ),
+                        ),
+                        Expanded(
+                          child: Divider(
+                            thickness: 0.9,
+                            color: Colors.grey[900],
+                          ),
+                        ),
+                      ],
+>>>>>>> e0746b47042ab2ed9a9eb7d21372f4d36b017433
                     ),
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.all(13),
@@ -191,6 +270,7 @@ class _SignupPageState extends State<SignupPage> {
                       }
                     },
                   ),
+<<<<<<< HEAD
                 ),
               
           //Don't have an account
@@ -257,6 +337,18 @@ class _SignupPageState extends State<SignupPage> {
           ),
         ),
       ),
+=======
+
+                  SizedBox(height: 10),
+
+                  buildLoginWithGoogle(context),
+
+
+
+                ]),))
+
+
+>>>>>>> e0746b47042ab2ed9a9eb7d21372f4d36b017433
     );
   }
 }

@@ -1,6 +1,5 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
+import 'package:techlingo/forgetPassword.dart';
 import 'constant.dart';
 import 'signup.dart';
 import 'Widgets.dart';
@@ -121,6 +120,7 @@ class _LoginPageState extends State<LoginPage> {
 
                           ),),),),
 
+<<<<<<< HEAD
 
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -138,6 +138,26 @@ class _LoginPageState extends State<LoginPage> {
                                     fontWeight: FontWeight.bold,)))
                         ],
                       ),
+=======
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        TextButton(
+                            onPressed: () {
+                              Navigator.pushReplacement(
+                                  context, MaterialPageRoute(builder: (context) => forgot_password()));
+                            },
+                            child: Text(
+
+                                'Forgot Password?',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: blueC,
+                                  fontWeight: FontWeight.bold,)))
+                      ],
+>>>>>>> e0746b47042ab2ed9a9eb7d21372f4d36b017433
                     ),
 
 
@@ -168,7 +188,11 @@ class _LoginPageState extends State<LoginPage> {
                             }
                         },
 
+<<<<<<< HEAD
                       ),),
+=======
+                  buildLogin(context),
+>>>>>>> e0746b47042ab2ed9a9eb7d21372f4d36b017433
 
 
                   //Don't have an account
@@ -239,7 +263,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   SizedBox(height: 25),
 
-              buildLoginWithGoogle(),
+              buildLoginWithGoogle( context),
 
 
               ],),),

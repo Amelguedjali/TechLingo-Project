@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 Color blueC = Color(0xFF2F89FC);
 Color blueF = Color(0xFF294F81);
 Color white = Color(0xFFD9D9D9);
@@ -11,12 +12,8 @@ Color color2 = Color(0xFFF5F5F5);
 Color color3 = Color(0xFFEDEDED);
 Color color4 = Color(0xFFFAFAFA);
 Color color5 = Color(0xFFF8F8F8);
-<<<<<<< HEAD
-
-String uri = 'http://127.0.0.1:3000';
 
 
 
 
-=======
->>>>>>> e0746b47042ab2ed9a9eb7d21372f4d36b017433
+

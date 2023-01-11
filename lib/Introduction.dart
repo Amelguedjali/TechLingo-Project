@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+<<<<<<< HEAD
 import 'package:projet_bdd/signup.dart';
 import 'login.dart';
+=======
+import 'Introduction6.dart';
+>>>>>>> e0746b47042ab2ed9a9eb7d21372f4d36b017433
 import 'constant.dart';
 
 
@@ -83,12 +87,12 @@ class _IntroductionState extends State<Introduction> {
           TextButton(
             onPressed: () {
               Navigator.pushReplacement(
-                  context, MaterialPageRoute(builder: (context) => LoginPage()));
+                  context, MaterialPageRoute(builder: (context) => introduction6()));
             },
             child: Text(
               "Skip",
               style: TextStyle(
-                color: currentIndex % 2 == 0 ? black : white,
+                color: currentIndex != 2 ? black : white,
                 fontFamily: 'Poppins',
               ),
             ),
@@ -164,7 +168,7 @@ class _IntroductionState extends State<Introduction> {
                       if (index == 2 ) {
 
                         Navigator.pushReplacement(
-                            context, MaterialPageRoute(builder: (context) => LoginPage()));
+                            context, MaterialPageRoute(builder: (context) => introduction6()));
                       }
 
                       _pageController.nextPage(
