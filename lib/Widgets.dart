@@ -82,6 +82,7 @@ Widget buildLoginWithGoogle(){
              fontSize: 17,
            ),
          ),
+
          style: ElevatedButton.styleFrom(
            padding: const EdgeInsets.all(13),
            fixedSize: Size(300, 50),

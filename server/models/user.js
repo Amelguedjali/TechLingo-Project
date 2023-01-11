@@ -30,10 +30,7 @@ const userSchema = mongoose.Schema({
         message: "Please enter a long password",
     },
   },
-  address: {
-    type: String,
-    default: "",
-  },
+  
   type: {
     type: String,
     default: "user",

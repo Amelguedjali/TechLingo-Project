@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const adminRouter = require("./routes/admin");
 // IMPORTS FROM OTHER FILES
 const authRouter = require("./routes/auth");
-// const productRouter = require("./routes/product");
 const wordRouter = require("./routes/word");
 const userRouter = require("./routes/user");
 
@@ -12,7 +11,7 @@ const userRouter = require("./routes/user");
 const PORT = process.env.PORT || 3000;
 const app = express();
 const DB =
-  "mongodb+srv://kamel_touati:kameltouatidz19%40@cluster0.ubpncbq.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://kamel_touati:<password>@cluster0.ubpncbq.mongodb.net/?retryWrites=true&w=majority";
 
 // middleware
 app.use(express.json());

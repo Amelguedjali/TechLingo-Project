@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:techlingo/Widgets.dart';
+import 'package:projet_bdd/Widgets.dart';
 import 'constant.dart';
 
 import 'Body_Profile.dart';
