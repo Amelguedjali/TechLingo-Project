@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:projet_bdd/constant.dart';
+import 'login.dart';
+import 'signup.dart';
+import 'constant.dart';
 
 
 class introduction6 extends StatefulWidget {
@@ -22,13 +24,16 @@ class _introduction6State extends State<introduction6> {
               padding: const EdgeInsets.fromLTRB(72.68, 133.93, 68.45, 82.61),
               child: Image.asset('assets/caracter2.png',),
             ),
-            
+
             //Button
             SizedBox(
                 height:54,
                 width: 312,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed:() {
+                      Navigator.pushReplacement(
+                          context, MaterialPageRoute(builder: (context) => LoginPage()));
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: blueF,
                       shape: RoundedRectangleBorder(
@@ -40,15 +45,18 @@ class _introduction6State extends State<introduction6> {
             ),
             SizedBox(height: 21,),
             Text('-OR-',
-            style: TextStyle(
-              fontSize: 14,
-            ),),
+              style: TextStyle(
+                fontSize: 14,
+              ),),
             SizedBox(height: 21,),
             SizedBox(
                 height:54,
                 width: 312,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed:() {
+                      Navigator.pushReplacement(
+                          context, MaterialPageRoute(builder: (context) => SignupPage()));
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: blueF,
                       shape: RoundedRectangleBorder(
