@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:techlingo/Dictionary.dart';
 import 'package:techlingo/Groups.dart';
-import 'constant.dart';
+import '../constant.dart';
 import 'Profile.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:percent_indicator/percent_indicator.dart';

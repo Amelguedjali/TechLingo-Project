@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projet_bdd/pages/forgot_password.dart';
-import 'constant.dart';
+import '../constant.dart';
 import 'signup.dart';
 import 'Widgets.dart';
 import 'package:projet_bdd/common/widgets/custom_textfield.dart';

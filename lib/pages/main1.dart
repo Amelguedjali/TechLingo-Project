@@ -1,11 +1,11 @@
 import 'package:projet_bdd/common/widgets/bottom_bar.dart';
 // import 'package:projet_bdd/constants/global_variables.dart';
 import 'package:projet_bdd/features/admin/screens/admin_screen.dart';
-import 'package:projet_bdd/signup.dart';
-import 'package:projet_bdd/login.dart';
+import 'package:projet_bdd/pages/signup.dart';
+import 'package:projet_bdd/pages/login.dart';
 import 'package:projet_bdd/features/auth/services/auth_service.dart';
 import 'package:projet_bdd/providers/user_provider.dart';
-import 'package:projet_bdd/router.dart';
+import 'package:projet_bdd/pages/router.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

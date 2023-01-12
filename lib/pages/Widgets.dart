@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:techlingo/HomePage.dart';
-import 'constant.dart';
+import '../constant.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 
 import 'package:pie_chart/pie_chart.dart';

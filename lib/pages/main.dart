@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:techlingo/HomePage.dart';
-import 'package:techlingo/HomePageAdmin.dart';
-import 'package:techlingo/Profile.dart';
+import 'package:projet_bdd/pages/HomePage.dart';
+import 'package:projet_bdd/pages/HomePageAdmin.dart';
+import 'package:projet_bdd/pages/Profile.dart';
 
-import 'Introduction.dart';
+import 'package:projet_bdd/pages/Introduction.dart';
 
 void main() {
   runApp(const MyApp());

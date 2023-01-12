@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:techlingo/HomePageAdmin.dart';
 import 'package:techlingo/Widgets.dart';
-import 'constant.dart';
+import '../constant.dart';
 import 'Profile.dart';
 import 'HomePage.dart';
 import 'package:getwidget/getwidget.dart';
